@@ -8,6 +8,12 @@ gem 'coffee-rails', '~> 4.1.0'
 
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'bower-rails'
+gem 'quiet_assets'
+
+gem 'active_model_serializers'
+gem 'responders', '~> 2.0'
+
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
@@ -15,12 +21,15 @@ group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
+  gem 'thin'
+  gem 'faker'
+  gem 'guard'
+  gem 'guard-minitest'
 end
 
 group :test do
   gem 'minitest-rails'
   gem 'minitest-rails-capybara'
-  gem 'minitest-colorize'
   gem 'minitest-focus'
 end
 

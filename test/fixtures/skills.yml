@@ -1,9 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  candidate_id: 1
+javascript:
+  name: JavaScript
+  candidate: one
 
-two:
-  name: MyString
-  candidate_id: 1
+ruby_motion:
+  name: RubyMotion
+  candidate: one
+
+ruby_motion:
+  name: RubyMotion
+  candidate: two
+
+cpp:
+  name: C++
+  candidate: two

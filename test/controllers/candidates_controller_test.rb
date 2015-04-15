@@ -5,41 +5,41 @@ class CandidatesControllerTest < ActionController::TestCase
     @candidate = candidates(:one)
   end
 
-  test "should get index" do
+  test "#index" do
     get :index
     assert_response :success
     assert_not_nil assigns(:candidates)
   end
 
-  test "should get new" do
+  test "#new" do
     get :new
     assert_response :success
   end
 
-  test "should create candidate" do
+  test "#create" do
     assert_difference('Candidate.count') do
-      post :create, candidate: { email: @candidate.email, name: @candidate.name }
+      post :create, candidate: { email: 'new@test.com', name: 'New Candidate' }
     end
 
     assert_redirected_to candidate_path(assigns(:candidate))
   end
 
-  test "should show candidate" do
+  test "#show" do
     get :show, id: @candidate
     assert_response :success
   end
 
-  test "should get edit" do
+  test "#edit" do
     get :edit, id: @candidate
     assert_response :success
   end
 
-  test "should update candidate" do
+  test "#update" do
     patch :update, id: @candidate, candidate: { email: @candidate.email, name: @candidate.name }
     assert_redirected_to candidate_path(assigns(:candidate))
   end
 
-  test "should destroy candidate" do
+  test "#destroy" do
     assert_difference('Candidate.count', -1) do
       delete :destroy, id: @candidate
     end
