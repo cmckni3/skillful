@@ -55,4 +55,3 @@ App for managing candidates and skills
   ```bash
   rake test
   ```
-

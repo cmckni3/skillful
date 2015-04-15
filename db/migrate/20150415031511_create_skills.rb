@@ -6,6 +6,7 @@ class CreateSkills < ActiveRecord::Migration
 
       t.timestamps null: false
     end
+    add_foreign_key :skills, :candidates
     add_index :skills, :candidate_id
   end
 end

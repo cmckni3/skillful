@@ -1,29 +1,37 @@
-<p id="notice"><%= notice %></p>
+<div class="page-header">
+  <%= link_to new_candidate_path, class: 'btn btn-primary' do %>
+    <span class="fa fa-plus"></span>
+    New Candidate
+  <% end %>
+  <h1>Listing candidates</h1>
+</div>
 
-<h1>Listing Candidates</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Email</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @candidates.each do |candidate| %>
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
       <tr>
-        <td><%= candidate.name %></td>
-        <td><%= candidate.email %></td>
-        <td><%= link_to 'Show', candidate %></td>
-        <td><%= link_to 'Edit', edit_candidate_path(candidate) %></td>
-        <td><%= link_to 'Destroy', candidate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Actions</th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
-<br>
-
-<%= link_to 'New Candidate', new_candidate_path %>
+    <tbody>
+      <%= content_tag_for(:tr, @candidates) do |candidate| %>
+            <td><%= candidate.name %></td>
+            <td><%= candidate.email %></td>
+            <td>
+              <%= link_to candidate, class: 'btn btn-default btn-xs', title: 'View' do %>
+                <i class="fa fa-info-circle"></i>
+              <% end %>
+              <%= link_to edit_candidate_path(candidate), class: 'btn btn-default btn-xs', title: 'Edit' do %>
+                <i class="fa fa-pencil"></i>
+              <% end %>
+              <%= link_to candidate, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-xs btn-danger', title: 'Delete' do %>
+                <i class="fa fa-times"></i>
+              <% end %>
+            </td>
+      <% end %>
+    </tbody>
+  </table>
+</div>

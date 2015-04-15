@@ -3,6 +3,7 @@
 
 # Ignore bower components
 /vendor/assets/bower_components/
+/vendor/assets/bower.json
 
 # Configuration file
 .env

@@ -6,7 +6,7 @@ class SkillTest < ActiveSupport::TestCase
   end
 
   test "doesn't save without all parameters" do
-    assert Skill.new(candidate_id: 1).invalid?, 'The skill should not be valid without a name'
+    assert Skill.new(candidate: candidates(:one)).invalid?, 'The skill should not be valid without a name'
     assert Skill.new(name: 'Test').invalid?, 'The skill should not be valid without a candidate'
   end
 end

@@ -1,0 +1,10 @@
+AllCops:
+  Exclude:
+    - Guardfile
+    - db/schema.rb
+    - bin/*
+    - vendor/assets/bower_components
+
+Style/MultilineOperationIndentation:
+  EnforcedStyle: indented
+

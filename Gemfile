@@ -25,6 +25,7 @@ group :development, :test do
   gem 'faker'
   gem 'guard'
   gem 'guard-minitest'
+  gem 'guard-rubocop'
 end
 
 group :test do
@@ -36,4 +37,3 @@ end
 group :production do
   gem 'rails_12factor'
 end
-
