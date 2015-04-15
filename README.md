@@ -34,9 +34,9 @@ App for managing candidates and skills
   bundle install
   ```
 
-* Setup database and run migrations
+* Setup database, run migrations, and run seeds
   ```bash
-  rake db:create db:migrate
+  rake db:create db:migrate db:seed
   ```
 
 ## Run the application
