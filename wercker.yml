@@ -1,0 +1,10 @@
+box: wercker/rvm
+services:
+  - wercker/postgresql
+build:
+    steps:
+        - bundle-install
+        - rails-database-yml
+        - script:
+            name: minitest
+            code: bundle exec rake test
