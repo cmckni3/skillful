@@ -5,6 +5,7 @@ build:
     steps:
         - bundle-install
         - rails-database-yml
+        - bundle exec rake bower:install
         - script:
             name: minitest
             code: bundle exec rake test
