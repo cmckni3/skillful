@@ -1,9 +1,10 @@
-box: wercker/rvm
+box: kojiwakayama/frontend@0.0.1
 services:
   - wercker/postgresql
 build:
     steps:
         - bundle-install
+        - npm install -g bower
         - rails-database-yml
         - bundle exec rake bower:install
         - script:
