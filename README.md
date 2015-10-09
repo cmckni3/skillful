@@ -1,6 +1,6 @@
 # Skillful
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/cmckni3/skillful#heroku-button)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/cmckni3/skillful)
 
 App for managing candidates and skills
 
