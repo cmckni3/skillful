@@ -1,0 +1,11 @@
+{
+"name": "Skillful",
+"description": "Rails 4 app to manage candidates and skills.",
+"website": "http://cmcknight.io",
+"repository": "https://github.com/cmckni3/skillful",
+"success_url": "/",
+"keywords": [
+"ruby on rails"
+],
+"generator": "https://www.expeditedssl.com/heroku-button-maker"
+}
