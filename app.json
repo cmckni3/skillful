@@ -5,7 +5,8 @@
 "repository": "https://github.com/cmckni3/skillful",
 "success_url": "/",
 "keywords": [
-"ruby on rails"
+  "ruby on rails"
 ],
+"scripts": { "postdeploy": "RAILS_ENV=production rake db:migrate" },
 "generator": "https://www.expeditedssl.com/heroku-button-maker"
 }
