@@ -12,9 +12,11 @@
  *
  *= require_tree .
  *= require_self
- *= require bootstrap/dist/css/bootstrap
- *= require font-awesome/css/font-awesome
+ *= require bootstrap
  */
+
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 body {
   padding-top: 50px;
