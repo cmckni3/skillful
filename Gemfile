@@ -8,8 +8,12 @@ gem 'coffee-rails', '~> 4.1.0'
 
 gem 'jquery-rails'
 gem 'turbolinks'
-gem 'bower-rails'
 gem 'quiet_assets'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-bootstrap', '~> 3.2'
+end
+gem 'font-awesome-sass', '~> 4.4'
 
 gem 'active_model_serializers'
 gem 'responders', '~> 2.0'
