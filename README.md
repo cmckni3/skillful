@@ -9,7 +9,6 @@ App for managing candidates and skills
 * Ruby 2+
 * Postgresql 9.4+
 * Nodejs 0.10+
-* Bower
 
 ## Setup
 
@@ -18,11 +17,6 @@ App for managing candidates and skills
 * Install Postgresql
 
 * Install node.js
-
-* Install bower
-  ```
-  npm install -g bower
-  ```
 
 * Edit `config/database.yml`
 
