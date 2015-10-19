@@ -8,3 +8,6 @@ AllCops:
 Style/MultilineOperationIndentation:
   EnforcedStyle: indented
 
+Style/Documentation:
+  Enabled: false
+

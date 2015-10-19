@@ -20,4 +20,3 @@ class CandidateSkillQuery
     @relation.find_each(&block)
   end
 end
-

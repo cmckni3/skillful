@@ -17,4 +17,3 @@ class API::V1::CandidatesController < ApplicationController
     end
   end
 end
-
