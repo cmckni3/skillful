@@ -21,9 +21,12 @@ gem 'responders', '~> 2.0'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-group :development, :test do
+group :development do
   gem 'byebug'
   gem 'web-console', '~> 3.0'
+end
+
+group :development, :test do
   gem 'spring'
   gem 'thin'
   gem 'faker'
