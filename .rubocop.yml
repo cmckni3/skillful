@@ -1,12 +1,18 @@
+# This is the configuration used to check the rubocop source code.
+
+inherit_from: .rubocop_todo.yml
+
 AllCops:
   Exclude:
-    - Guardfile
-    - db/schema.rb
-    - bin/*
-    - vendor/assets/bower_components
+    - 'bin/*'
+    - 'Guardfile'
+    - '**/*.rake'
+    - 'db/schema.rb'
+    - 'vendor/**/*'
+  TargetRubyVersion: 2.2
 
-Style/MultilineOperationIndentation:
-  EnforcedStyle: indented
+Rails:
+  Enabled: true
 
 Style/Documentation:
   Enabled: false

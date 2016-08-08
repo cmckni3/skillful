@@ -29,6 +29,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development do
   gem 'byebug'
   gem 'web-console', '~> 3.0'
+  gem 'rubocop'
 end
 
 group :development, :test do
