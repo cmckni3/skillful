@@ -62,6 +62,9 @@ GEM
     concurrent-ruby (1.0.2)
     daemons (1.2.3)
     debug_inspector (0.0.2)
+    dotenv (2.0.0)
+    dotenv-rails (2.0.0)
+      dotenv (= 2.0.0)
     erubis (2.7.0)
     eventmachine (1.2.0.1)
     execjs (2.7.0)
@@ -251,6 +254,7 @@ PLATFORMS
 DEPENDENCIES
   active_model_serializers
   byebug
+  dotenv-rails
   faker
   font-awesome-sass (~> 4.4)
   guard
