@@ -9,6 +9,7 @@ gem 'pg'
 
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
+gem 'slim-rails'
 gem 'sprockets', '>= 3.0.0'
 gem 'sprockets-es6'
 
@@ -23,7 +24,6 @@ gem 'font-awesome-sass', '~> 4.4'
 gem 'active_model_serializers'
 gem 'responders', '~> 2.0'
 
-gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development do
