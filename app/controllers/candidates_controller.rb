@@ -21,8 +21,7 @@ class CandidatesController < ApplicationController
   end
 
   # GET /candidates/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /candidates
   def create
@@ -54,7 +53,8 @@ class CandidatesController < ApplicationController
     @candidate = Candidate.find(params[:id])
   end
 
-  # Never trust parameters from the scary internet, only allow the white list through.
+  # Never trust parameters from the scary internet,
+  # only allow the white list through.
   def candidate_params
     params.require(:candidate).permit(:name, :email, { skills: [:name] })
   end

@@ -17,3 +17,5 @@ Rails:
 Style/Documentation:
   Enabled: false
 
+Rails/HttpPositionalArguments:
+  Enabled: false

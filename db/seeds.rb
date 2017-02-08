@@ -30,9 +30,9 @@ skills = %w(JavaScript C++ Go Ruby RubyMotion iOS)
   'Voldemort'
 ].each do |candidate_name|
   candidate_skills = (1..3)
-    .map { |_| skills.sample }
-    .uniq
-    .map { |skill_name| Skill.new(name: skill_name) }
+                     .map { |_| skills.sample }
+                     .uniq
+                     .map { |skill_name| Skill.new(name: skill_name) }
   Candidate.create!(
     name: candidate_name,
     email: name_to_email(candidate_name),
