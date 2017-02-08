@@ -1,6 +1,6 @@
- module API
-   module V1
-     class CandidatesController < ApplicationController
+module API
+  module V1
+    class CandidatesController < ApplicationController
       protect_from_forgery with: :null_session
       respond_to :json
 
