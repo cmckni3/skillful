@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '~> 2.4.6'
 
 # Application configuration
 gem 'dotenv-rails', require: 'dotenv/rails-now', groups: [:development, :test]
