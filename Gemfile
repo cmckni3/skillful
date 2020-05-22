@@ -25,7 +25,7 @@ gem 'font-awesome-sass', '~> 4.4'
 gem 'active_model_serializers', '>= 0.10.6'
 gem 'responders', '~> 2.4', '>= 2.4.0'
 
-gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'sdoc', '~> 1.0.0', group: :doc
 
 group :development do
   gem 'byebug'
